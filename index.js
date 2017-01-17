@@ -3,6 +3,7 @@ var admin = require('firebase-admin')
 var validUrl = require('valid-url')
 
 var serviceKey = process.env.SERVICE_KEY || require('./serviceKey.json')
+console.log(typeof(serviceKey), serviceKey)
 admin.initializeApp({
   credential: admin.credential.cert(serviceKey),
   databaseURL: 'https://url-shortener-microservi-685f2.firebaseio.com'
