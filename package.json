@@ -1,0 +1,12 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://nateinaction@github.com/nateinaction/url-shortener-microservice.git",
+  "author": "Nate Gay <nate@ohnate.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.21"
+  }
+}
