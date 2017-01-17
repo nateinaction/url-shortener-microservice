@@ -3,6 +3,9 @@ var admin = require('firebase-admin')
 var validUrl = require('valid-url')
 
 var serviceKey = process.env.SERVICE_KEY || require('./serviceKey.json')
+if (typeof(serviceKey) !== 'object') {
+  serviceKey = JSON.parse(serviceKey)
+}
 console.log(typeof(serviceKey), serviceKey)
 admin.initializeApp({
   credential: admin.credential.cert(serviceKey),
